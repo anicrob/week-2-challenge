@@ -32,6 +32,9 @@ nav li {
     display:inline;
     margin-right:50px;
 }
+a {
+    text-decoration:none;
+}
 #cover{
     display: flex;
     justify-content: flex-end;
