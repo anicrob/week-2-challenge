@@ -57,7 +57,6 @@ a {
     margin-bottom: 15px;
     width: 200px;
     font-size: 30px;
-    border-radius: 30px;
 }
 #about-me-section{
     display:flex;
@@ -230,5 +229,12 @@ heading li:hover{
     nav li {
         display: inline-block;
         padding:10px;
+    }
+    #cover {
+        justify-content: space-around;
+    }
+    #cover header{
+        position:relative;
+        left:30px;
     }
 }
