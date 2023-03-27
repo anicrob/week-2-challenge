@@ -43,7 +43,7 @@ a {
 }
 /* Then I have formatted the cover image and subtitle here. */
 #cover{
-    background-image: url(/assets/images/hexagons.jpg);
+    background-image: url(../images/hexagons.jpg);
     height: 300px;
     display: grid;
 }
@@ -111,7 +111,7 @@ The first project is further styled to be bigger.  */
     border: 5px solid #bbf4fd;
     width: 45%;
     height: 90px;
-    background-image: url(/assets/images/hexagons.jpg);
+    background-image: url(../images/hexagons.jpg);
     display: flex;
     margin: 5px;
     align-items:end;
