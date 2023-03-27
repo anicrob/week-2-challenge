@@ -1,3 +1,4 @@
+/* Higer level CSS formatting */
 html{
     width:100%;
 }
@@ -6,6 +7,7 @@ body {
     background-color:#fff;
     margin:0;
 }
+/* This is the heading, my name, and the nav bar formatting/styling. */
 heading {
     background-color: rgb(25 82 126);
     width: 100%;
@@ -39,37 +41,47 @@ a {
     text-decoration:none;
     color:white;
 }
+/* Then I have formatted the cover image and subtitle here. */
 #cover{
-    display: flex;
-    justify-content: flex-end;
-    align-items: end;
-    background-image:url(./cool\ pic.jpg);
+    background-image: url(/assets/images/hexagons.jpg);
     height: 300px;
+    display: grid;
 }
 #cover header {
     background-color: #fff;
     color: #010001;
     display: flex;
-    justify-content: center;
     align-items: center;
     height: 30px;
     margin-right: 50px;
     margin-bottom: 15px;
     width: 200px;
     font-size: 30px;
+    justify-self: flex-end;
+    justify-content: center;
+    order: 2;
 }
+#cover img {
+    height: 176px;
+    width: 156px;
+    position: relative;
+    top: 30px;
+    border: 10px solid #174d78;
+    border-radius: 10px;
+
+}
+/* Here starts the about me section formatting.  */
 #about-me-section{
     display:flex;
     align-items:center;
     align-content: space-between;
 }    
-
 #about-me-section div {
     color:#010001;
     width: 75%;
     margin: 50px;
 }
-
+/* I formatted each of the content sections and their headers with these classes. */
 .content-section header {
     display: flex;
     flex-direction: column;
@@ -82,7 +94,11 @@ a {
     flex-wrap: wrap;
     padding-right: 23px;
 }
-
+.content-section {
+    display:flex;
+}
+/* Here I am formatting the work tiles section, the work tiles themselves, and their labels.
+The first project is further styled to be bigger.  */
 #work-tiles {
     display:flex;
     flex-wrap:wrap;
@@ -95,7 +111,7 @@ a {
     border: 5px solid #bbf4fd;
     width: 45%;
     height: 90px;
-    background-image: url(./cool\ pic.jpg);
+    background-image: url(/assets/images/hexagons.jpg);
     display: flex;
     margin: 5px;
     align-items:end;
@@ -107,7 +123,6 @@ a {
     border: 5px solid #bbf4fd;
     width: 95%;
     height: 200px;
-    background-image: url(./cool\ pic.jpg);
     display: flex;
     margin: 5px;
     flex: 2 1 95%  
@@ -134,13 +149,11 @@ a {
     display: flex;
     justify-content: center;
 }
-.content-section {
-    display:flex;
-}
+/* Added margin to the entire work section. */
 #work-section{
     margin: 50px auto;
 }
-
+/* Started formatting the contact me section, unordered list, and list items. */
 #contact-me-section div {
     display: flex;
     justify-content: center;
@@ -162,50 +175,20 @@ a {
     list-style-type: none;
     display:inline;
 }
-
+.contact-info, .contact-info a{
+    display:flex;
+    color:#1b527a;
+}
+/* Pseudo-classes for the tiles and the heading list items. */
 .tile:hover{ 
     opacity: 1.0;
 }
 heading li:hover{
     background-color: rgb(0, 229, 255);
 }
-.contact-info{
-    display:flex;
-}
+/* Media query to adjust for mobile devices.  */
 @media screen and (max-width:768px){
-    .content-section{
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-    }
-    .content-section header{
-        color: #1b527a;
-        border-bottom: 5px solid;
-        border-right: none;
-        display: flex;
-        align-content: center;
-        width: 100%;
-        flex-direction: column;
-    }
-    .tile{
-        width:100%;
-        display:block;
-        margin:10px 100px;
-        height:150px;
-    }
-    #project1{
-        width:100%;
-        display:block;
-        margin:10px 100px;
-        height:150px;
-    }
-    #work-tiles{
-        width:100%
-    }
-    .label{
-        position: relative;
-        top: 20px;
-    }
+    /* Heading and nav bar formatting for mobile devices. */
     heading {
         flex-direction: column;
         width:100%;
@@ -230,11 +213,69 @@ heading li:hover{
         display: inline-block;
         padding:10px;
     }
+    /* Cover formatting for mobile devices. */
     #cover {
         justify-content: space-around;
+        height:450px;
     }
     #cover header{
         position:relative;
         left:30px;
+        margin-top:40px
     }
+    #cover img{
+        margin-top:100px;
+    }
+    /* Content section formatting for mobile devices. */
+    .content-section{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .content-section header{
+        color: #1b527a;
+        border-bottom: 5px solid;
+        border-right: none;
+        display: flex;
+        align-content: center;
+        width: 100%;
+        flex-direction: column;
+    }
+    /* Work tile section and tile formatting for mobile devices. */
+    .tile{
+        width:100%;
+        display:block;
+        margin:10px 100px;
+        height:150px;
+    }
+    #project1{
+        width:100%;
+        display:block;
+        margin:10px 100px;
+        height:150px;
+    }
+    #work-tiles{
+        width:100%
+    }
+    .label{
+        position: relative;
+        top: 20px;
+    }
+    /* Contact me section formatting for mobile devices */
+    #contact-me-section {
+        margin-bottom:50px;
+    }
+    #contact-me-section ul {
+        display:flex;
+        flex-direction:column;
+        margin:10px;
+        line-height:25px;
+    }
+    #contact-me-section header{
+        margin-bottom: 25px;
+    }
+    #contact-me-section li{
+        border-bottom:5px solid rgb(0, 229, 255);
+        width: fit-content;
+  }
 }

@@ -1,16 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+    <!-- This is the head with the meta data, title, and link to the CSS styleshseet.  -->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio Website</title>
-    <link rel="stylesheet" type="text/css" href="./Assets/style.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
 </head>
+<!-- This is the body of the website. -->
 <body>
+    <!-- This is the heading with a div for my name and for the nav bar.  -->
     <heading>
+        <!-- My name.  -->
         <div>
             <p>Andrea Robbins</p>
         </div>
+        <!-- The nav bar with the links to the sections. -->
         <nav>
             <ul id="nav-list-items">
                 <li><a href="#about-me-section">About Me</a></li>
@@ -20,24 +25,35 @@
             </ul>
         </nav>
     </heading>
+    <!-- This is the cover with a background image in the CSS, a profile pic, and a header. -->
     <div id="cover">
         <header>My Portfolio</header>
+        <figure>
+            <img src="./assets/images/profile pic hw 2.png" alt="profile image of student"/>
+        </figure>
     </div>
+    <!-- The content sections start here.  -->
+    <!-- About me section starts here.  -->
     <section class="content-section" id="about-me-section">
         <header>
             <h1>About Me</h1>
         </header>
         <div>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque sequi ipsam, nemo, non suscipit ipsum architecto saepe odit necessitatibus aspernatur corrupti fuga animi ab nihil.
+            <p>
+                I am an Associate Business Consultant currently at Adaptavist where I help our clients with implementing Atlassian products or assisting them with good practices.
             <br>
             </p>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non deserunt, architecto perferendis possimus quod maiores accusamus totam iusto alias sapiente ratione. Animi velit dolore id?</p>
+            <p>
+                Although my job is very business focused, I often do the implementations of the Atlassian suite of products myself. I am an Atlassian Certified Expert, so using the UI to configure workflows and other project configuration is my speciality, but I always rely on the Technical Consultants for questions about SQL, API stuff, or creating/editing anything that required CSS. I am taking a course at UNC called Full Stack Web Development, so I no longer have to rely on our busy Technical Consultants.
+            </p>
         </div>
     </section>
+    <!-- Work Section starts here. -->
     <section class="content-section" id="work-section">
         <header>
             <h1>Work</h1>
         </header>
+        <!-- Each of the project or work squares or tiles.  -->
         <div id="work-tiles">
             <div class="tile" id="project1">
                 <div class ="label">
@@ -71,16 +87,18 @@
             </div>
         </div>
     </section>
+    <!-- The contact me section starts here.  -->
     <section class="content-section" id="contact-me-section">
         <header>
             <h1>Contact Me</h1>
         </header>
         <div>
+            <!-- Contact information with links.  -->
             <ul>
                 <li class="contact-info">555.555.555</li>
-                <li class="contact-info">email</li>
-                <li class="contact-info">GitHub Link</li>
-                <li class="contact-info">LinkedIn</li>
+                <li class="contact-info"><a href="mailto:anrobbins18@gmail.com">anrobbins18@gmail.com</a></li>
+                <li class="contact-info"><a href="https://github.com/anicrob"></a>GitHub</li>
+                <li class="contact-info"><a href="https://www.linkedin.com/in/andrea-robbins-capm-psm-pspo-sasm/">LinkedIn</a></li>
             </ul>
         </div>
     </section>
