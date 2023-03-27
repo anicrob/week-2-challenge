@@ -37,7 +37,7 @@ nav li {
     display:inline;
     margin-right:50px;
 }
-a {
+nav a {
     text-decoration:none;
     color:white;
 }
@@ -46,6 +46,7 @@ a {
     background-image: url(../images/hexagons.jpg);
     height: 300px;
     display: grid;
+    width:100%;
 }
 #cover header {
     background-color: #fff;
@@ -118,6 +119,8 @@ The first project is further styled to be bigger.  */
     justify-content:left;
     flex: 1 0 45%;
     opacity: 0.7;
+    text-decoration:none;
+    color: black;
 }
 #project1 {
     border: 5px solid #bbf4fd;
@@ -178,6 +181,7 @@ The first project is further styled to be bigger.  */
 .contact-info, .contact-info a{
     display:flex;
     color:#1b527a;
+    text-decoration:none;
 }
 /* Pseudo-classes for the tiles and the heading list items. */
 .tile:hover{ 
