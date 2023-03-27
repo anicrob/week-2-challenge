@@ -9,8 +9,8 @@ Cover image from Wallpapers.com
 
 ## Screenshots
 Header, cover photo, and about me section:
-![Screenshot](./assets/images/Screenshot%201.png)
+![Screenshot](./assets/images/screenshot_1.png)
 Work and Contact Me sections:
-![Screenshot](./assets/images/Screenshot%202.png)
+![Screenshot](./assets/images/screenshot_2.png)
 ## Link to deployed application
 
