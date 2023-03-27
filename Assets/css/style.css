@@ -178,10 +178,14 @@ The first project is further styled to be bigger.  */
     list-style-type: none;
     display:inline;
 }
-.contact-info, .contact-info a{
-    display:flex;
-    color:#1b527a;
-    text-decoration:none;
+.contact-info a{
+    display: flex;
+    color: #1b527a;
+    /* padding-bottom: 8px; */
+    text-decoration: none;
+    border-bottom: 3px solid #174d78;
+    padding-bottom: 3px;
+    border-bottom-style: solid;
 }
 /* Pseudo-classes for the tiles and the heading list items. */
 .tile:hover{ 
@@ -279,7 +283,6 @@ heading li:hover{
         margin-bottom: 25px;
     }
     #contact-me-section li{
-        border-bottom:5px solid rgb(0, 229, 255);
         width: fit-content;
   }
 }
