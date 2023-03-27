@@ -13,5 +13,5 @@ Header, cover photo, and about me section:
 Work and Contact Me sections:
 ![Screenshot](./Assets/images/screenshot_2.png)
 ## Link to deployed application
-link goes here - will add soon
-
+Link to Repo: https://github.com/anicrob/week-2-challenge 
+Link to Site: https://anicrob.github.io/week-2-challenge/ 
