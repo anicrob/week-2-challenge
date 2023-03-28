@@ -24,9 +24,8 @@ heading div {
     align-items:center;
     height: 50px;
     width: 200px;
-    font-size: 30px;
+    font-size: 24px;
     font-weight:bolder;
-    font-family: cursive;
 }
 
 nav li {
@@ -93,7 +92,9 @@ nav a {
     color: #1b527a;
     font-weight: 100;
     flex-wrap: wrap;
-    padding-right: 23px;
+    padding-right: 30px;
+    position: relative;
+    right: 30px;
 }
 .content-section {
     display:flex;
@@ -216,6 +217,7 @@ heading li:hover{
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
+        padding-left:0;
     }
     nav li {
         display: inline-block;
@@ -248,6 +250,7 @@ heading li:hover{
         align-content: center;
         width: 100%;
         flex-direction: column;
+        position: initial;
     }
     /* Work tile section and tile formatting for mobile devices. */
     .tile{
@@ -267,7 +270,8 @@ heading li:hover{
     }
     .label{
         position: relative;
-        top: 20px;
+        top: 85px;
+        left: 5px;
     }
     /* Contact me section formatting for mobile devices */
     #contact-me-section {
@@ -278,7 +282,7 @@ heading li:hover{
         flex-direction:column;
         margin:10px;
         line-height:25px;
-    }
+        padding-inline-start: 0px;    }
     #contact-me-section header{
         margin-bottom: 25px;
     }
