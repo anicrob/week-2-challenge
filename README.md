@@ -9,9 +9,9 @@ Cover image from Wallpapers.com
 
 ## Screenshots
 Header, cover photo, and about me section:
-![Screenshot](./Assets/images/screenshot_1.png)
+![Screenshot](./Assets/images/screenshot-1.png)
 Work and Contact Me sections:
-![Screenshot](./Assets/images/screenshot_2.png)
+![Screenshot](./Assets/images/screenshot-2.png)
 ## Link to deployed application
 Link to Repo: https://github.com/anicrob/week-2-challenge 
 
