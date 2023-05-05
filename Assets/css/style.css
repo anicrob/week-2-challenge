@@ -129,7 +129,11 @@ The first project is further styled to be bigger.  */
     height: 200px;
     display: flex;
     margin: 5px;
-    flex: 2 1 95%  
+    flex: 2 1 95%;
+    background-image: url(../images/recipe-patch.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 .label {
     background-color: #fff;
