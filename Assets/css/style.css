@@ -135,12 +135,21 @@ The first project is further styled to be bigger.  */
     background-repeat: no-repeat;
     background-position: center;
 }
+#project2 {
+    border: 5px solid #bbf4fd;
+    display: flex;
+    margin: 5px;
+    background-image: url(../images/challenge-fitness.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;  
+}
 .label {
     background-color: #fff;
     display: flex;
     flex-direction: column;
     width: 100px;
-    height: 45px;
+    height: 60px;
     align-items: center;
     justify-content: flex-start;
     font-size: 12px;
